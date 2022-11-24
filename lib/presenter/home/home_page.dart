@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../core/app_assets.dart';
-import '../business/business_card.dart';
+import 'widgets/button_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,24 +14,9 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Lottie.asset(splash),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const BusinessCard(),
-                  ),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                elevation: 5,
-                padding: const EdgeInsets.all(24),
-              ),
-              child: const Text(
-                'Cartão de Visita',
-              ),
-            ),
+            //ElevatedButton - Widget criado
+            //button_widget.dart
+            const ButtonWidget(),
           ],
         ),
       ),
