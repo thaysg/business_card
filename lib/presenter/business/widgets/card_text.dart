@@ -12,8 +12,10 @@ class CardText extends StatelessWidget {
         width: 200,
         child: Card(
           elevation: 5,
+          //Sombra de fundo + opcity(efeito de transparencia)
           shadowColor: const Color(0xFF7C87FB).withOpacity(0.5),
           surfaceTintColor: const Color(0xFF7C87FB),
+          //Deixar com a borda arrendondada e com cor
           shape: RoundedRectangleBorder(
             side: const BorderSide(
               color: Color(0xFF7C87FB),
@@ -36,6 +38,8 @@ class CardText extends StatelessWidget {
     );
   }
 }
+
+//Outro jeito de criar o mesmo efeito do para o widget CardText
 
 /* class CardText extends StatelessWidget {
   final String title;
